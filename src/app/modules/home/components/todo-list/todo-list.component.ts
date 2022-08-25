@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListComponent implements OnInit {
 
+  public taskList: Array<{ task: string, checked: boolean }> = [];
   constructor() { }
 
   ngOnInit(): void {
